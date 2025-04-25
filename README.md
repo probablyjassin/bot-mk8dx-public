@@ -1,4 +1,4 @@
-# bot-mk8dx-public### 📦 Private Repo Info
+### 📦 Private Repo Info
 
 - Total commits: 645
 - Latest commit: improve /status in case the room is unavailable
