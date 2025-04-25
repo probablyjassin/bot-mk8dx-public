@@ -38,10 +38,10 @@ jobs:
       - name: Update README.md
         run: |
           # Remove old info section if it exists
-          sed -i '/### 📦 Private Repo Info/,$d' README.md
+          sed -i '/## Yuzu MK8DX-Lounge Discord Bot/,$d' README.md
 
           {
-            echo '### 📦 Private Repo Info'
+            echo '## Yuzu MK8DX-Lounge Discord Bot'
             echo ""
             echo "- Total commits: ${{ steps.repo_info.outputs.commit_count }}"
             echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
