@@ -21,6 +21,16 @@
 `kevnkkm`: 10 commits
 
 # Season 3 of MK8DX-Lounge on Yuzu Online!
+## Repository Stats
+- 645 total commits
+- Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
+### Top contributors:
+
+`probablyjassin`: 460 commits
+
+`kevnkkm`: 10 commits
+
+# Season 3 of MK8DX-Lounge on Yuzu Online!
 
 <!-- <img width="1920" alt="MK8DX-Lounge Season 3 Banner" src="https://github.com/user-attachments/assets/561c885e-aaa1-4130-a0c2-d0e9f46a8ccb"> -->
 
