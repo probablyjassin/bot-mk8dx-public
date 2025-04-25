@@ -41,9 +41,14 @@ jobs:
           } >> README.md
 
       - name: Commit and push changes
+        env: 
+          PAT: ${{ secrets.PRIVATE_PAT }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
+
           git commit -m "Update README with private repo info" || echo "No changes to commit"
-          git push
+          
+          git remote set-url origin https://x-access-token:${PAT}@github.com/${{ github.repository }}
+          git push origin HEAD
