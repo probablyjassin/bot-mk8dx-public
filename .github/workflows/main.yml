@@ -22,6 +22,11 @@ jobs:
         run: |
           git clone https://$PAT@github.com/probablyjassin/bot-mk8dx.git private-repo
 
+      - name: Git Pull´
+        run: |
+          git pull
+
+
       - name: Get private repo info
         id: repo_info
         run: |
