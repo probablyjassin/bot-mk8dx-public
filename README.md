@@ -4,6 +4,7 @@
 
 # Repository Stats
 645 total commits
+
 Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
 #### Top contributors:
 
@@ -22,7 +23,7 @@ Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
 
 # Season 3 of MK8DX-Lounge on Yuzu Online!
 
-<!-- <img width="1920" alt="MK8DX-Lounge Season 3 Banner" src="https://github.com/user-attachments/assets/561c885e-aaa1-4130-a0c2-d0e9f46a8ccb"> -->
+<img width="1920" alt="MK8DX-Lounge Season 3 Banner" src="https://github.com/user-attachments/assets/561c885e-aaa1-4130-a0c2-d0e9f46a8ccb">
 
 We're happy to present the next season of Lounge to you!
 There is tons of new things we prepared for you all
