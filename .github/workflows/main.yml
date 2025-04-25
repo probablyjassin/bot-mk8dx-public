@@ -40,7 +40,7 @@ jobs:
       - name: Update README.md
         run: |
           # Remove old info section if it exists
-          sed -i '/## Repository Stats/,$d' README.md
+          sed -i '/## Repository Stats/,/^# /{ /^# /!d; }' README.md
 
           {
             echo '## Repository Stats'
