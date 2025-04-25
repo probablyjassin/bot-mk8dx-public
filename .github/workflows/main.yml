@@ -53,6 +53,16 @@ jobs:
             echo "\`kevnkkm\`: ${{ steps.repo_info.outputs.user2_commits }} commits"
             echo ""
 
+            echo '## What does this bot do?'
+            echo ''
+            echo '- let people register to the Leaderboard'
+            echo '- let them join Mario Kart events'
+            echo '- manage their gaming session'
+            echo '- collect their points'
+            echo '- calculate their new MMR'
+            echo '- store all this data in a mongodb database'
+            echo ''
+
             echo '# Season 3 of MK8DX-Lounge on Yuzu Online!'
             echo ''
             echo '<!-- <img width="1920" alt="MK8DX-Lounge Season 3 Banner" src="https://github.com/user-attachments/assets/561c885e-aaa1-4130-a0c2-d0e9f46a8ccb"> -->'
