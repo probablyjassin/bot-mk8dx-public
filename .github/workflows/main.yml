@@ -34,22 +34,24 @@ jobs:
           echo "commit_count=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
           echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
           echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
-          echo "$top_contributors=$(git shortlog -sn | head -3 | sed 's/^/  - /')" >> $GITHUB_OUTPUT
+          
+          echo "top_contributors<<EOF" >> $GITHUB_OUTPUT
+          git shortlog -sn | head -3 | sed 's/^/  - /' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Update README.md
         run: |
           # Remove old info section if it exists
           sed -i '/## Yuzu MK8DX-Lounge Discord Bot/,$d' README.md
 
-          {
-            echo '## Yuzu MK8DX-Lounge Discord Bot'
-            echo ""
-            echo "- Total commits: ${{ steps.repo_info.outputs.commit_count }}"
-            echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
-            echo "- Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}"
-            echo "- Top Contributors:"
-            echo "${{ steps.repo_info.outputs.top_contributors }}"
-          } >> README.md
+            cat <<EOF >> README.md
+            ## Yuzu MK8DX-Lounge Discord Bot
+            - Total commits: ${{ steps.repo_info.outputs.commit_count }}
+            - Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}
+            - Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}
+            - Top Contributors:
+            ${{ steps.repo_info.outputs.top_contributors }}
+           EOF
 
       - name: Commit and push changes
         run: |
