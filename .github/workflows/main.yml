@@ -1,0 +1,49 @@
+name: Update README with Private Repo Info
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout public repo
+        uses: actions/checkout@v3
+
+      - name: Clone private repo
+        env:
+          PAT: ${{ secrets.PRIVATE_PAT }}
+        run: |
+          git clone https://$PAT@github.com/probablyjassin/bot-mk8dx.git private-repo
+
+      - name: Get private repo info
+        id: repo_info
+        run: |
+          cd private-repo
+          echo "commit_count=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
+          echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+          echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
+
+      - name: Update README.md
+        run: |
+          # Remove old info section if it exists
+          sed -i '/### 📦 Private Repo Info/,$d' README.md
+
+          {
+            echo '### 📦 Private Repo Info'
+            echo ""
+            echo "- Total commits: ${{ steps.repo_info.outputs.commit_count }}"
+            echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
+            echo "- Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}"
+          } >> README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update README with private repo info" || echo "No changes to commit"
+          git push
