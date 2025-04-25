@@ -45,7 +45,7 @@ jobs:
           {
             echo '## Repository Stats'
             echo "- ${{ steps.repo_info.outputs.commit_count }} total commits"
-            echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
+            echo "- Latest commit: `${{ steps.repo_info.outputs.latest_commit_msg }}`"
             echo "- Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}"
             echo "- ProbablyJassin commits: ${{ steps.repo_info.outputs.user1_commits }}"
             echo "- Kevnkkm commits: ${{ steps.repo_info.outputs.user2_commits }}"
