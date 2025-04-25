@@ -10,7 +10,8 @@
 - collect their points
 - calculate their new MMR
 - store all this data in a mongodb database
-- 
+
+
 ## Repository Stats
 - 645 total commits
 - Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
@@ -20,7 +21,6 @@
 
 `kevnkkm`: 10 commits
 
-# Season 3 of MK8DX-Lounge on Yuzu Online!
 ## Repository Stats
 - 645 total commits
 - Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
