@@ -22,7 +22,7 @@ jobs:
         run: |
           git clone https://$PAT@github.com/probablyjassin/bot-mk8dx.git private-repo
 
-      - name: Git Pull´
+      - name: Git Pull
         run: |
           git pull
 
@@ -45,13 +45,13 @@ jobs:
           sed -i '/## Yuzu MK8DX-Lounge Discord Bot/,$d' README.md
 
           {
-            echo '### Repository Stats'
-            echo "${{ steps.repo_info.outputs.commit_count }} total commits"
-            echo "Latest commit: ```${{ steps.repo_info.outputs.latest_commit_msg }}``` on ${{ steps.repo_info.outputs.latest_commit_date }}"
-            echo "Top Contributors:"
-            echo ${{ steps.repo_info.outputs.contributor_1 }}
-            echo ${{ steps.repo_info.outputs.contributor_2 }}
-            echo ${{ steps.repo_info.outputs.contributor_3 }}
+            echo "### Repository Stats"
+            echo "- ${{ steps.repo_info.outputs.commit_count }} total commits"
+            echo "- Latest commit: `${{ steps.repo_info.outputs.latest_commit_msg }}` on ${{ steps.repo_info.outputs.latest_commit_date }}"
+            echo "- Top Contributors:"
+            echo "- ${{ steps.repo_info.outputs.contributor_1 }}"
+            echo "- ${{ steps.repo_info.outputs.contributor_2 }}"
+            echo "- ${{ steps.repo_info.outputs.contributor_3 }}"
           } >> README.md
 
       - name: Commit and push changes
