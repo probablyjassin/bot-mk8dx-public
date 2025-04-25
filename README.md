@@ -1,10 +1,10 @@
 # Yuzu MK8DX-Lounge Discord Bot
 text goes here
 
-## Yuzu MK8DX-Lounge Discord Bot
-
-- Total commits: 645
-- Latest commit: improve /status in case the room is unavailable
-- Commit date: 2025-04-24
-- Top Contributors:
-
+  ## Yuzu MK8DX-Lounge Discord Bot
+  - Total commits: 645
+  - Latest commit: improve /status in case the room is unavailable
+  - Commit date: 2025-04-24
+  - Top Contributors:
+  
+ EOF
