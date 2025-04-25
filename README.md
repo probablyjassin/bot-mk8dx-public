@@ -12,6 +12,7 @@
 - store all this data in a mongodb database
 
 # Season 3 of MK8DX-Lounge on Yuzu Online!
+# Season 3 of MK8DX-Lounge on Yuzu Online!
 
 <!-- <img width="1920" alt="MK8DX-Lounge Season 3 Banner" src="https://github.com/user-attachments/assets/561c885e-aaa1-4130-a0c2-d0e9f46a8ccb"> -->
 
