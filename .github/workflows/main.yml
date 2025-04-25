@@ -40,10 +40,10 @@ jobs:
       - name: Update README.md
         run: |
           # Remove old info section if it exists
-          sed -i '/## Repository Stats/,$d' README.md
+          sed -i '/# Repository Stats/,$d' README.md
 
           {
-            echo '## Repository Stats'
+            echo '# Repository Stats'
             echo "- ${{ steps.repo_info.outputs.commit_count }} total commits"
             echo "- Latest commit: \`${{ steps.repo_info.outputs.latest_commit_msg }}\` on ${{ steps.repo_info.outputs.latest_commit_date }}"
             echo "### Top contributors:"
