@@ -2,7 +2,7 @@ name: Update README with Private Repo Info
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight UTC
+    - cron: "0 0 * * *" # Daily at midnight UTC
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,6 @@ jobs:
         run: |
           git pull
 
-
       - name: Get private repo info
         id: repo_info
         run: |
@@ -35,23 +34,17 @@ jobs:
           echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
           echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
 
-          echo "contributor_1=$(git shortlog -sn | head -n 1 | sed 's/^/  - /')" >> $GITHUB_OUTPUT
-          echo "contributor_2=$(git shortlog -sn | head -n 2 | tail -n 1 | sed 's/^/  - /')" >> $GITHUB_OUTPUT
-          echo "contributor_3=$(git shortlog -sn | head -n 3 | tail -n 1 | sed 's/^/  - /')" >> $GITHUB_OUTPUT
-
       - name: Update README.md
         run: |
           # Remove old info section if it exists
-          sed -i '/## Yuzu MK8DX-Lounge Discord Bot/,$d' README.md
+          sed -i '/### 📦 Private Repo Info/,$d' README.md
 
           {
-            echo "### Repository Stats"
-            echo "- ${{ steps.repo_info.outputs.commit_count }} total commits"
-            echo "- Latest commit: `${{ steps.repo_info.outputs.latest_commit_msg }}` on ${{ steps.repo_info.outputs.latest_commit_date }}"
-            echo "- Top Contributors:"
-            echo "- ${{ steps.repo_info.outputs.contributor_1 }}"
-            echo "- ${{ steps.repo_info.outputs.contributor_2 }}"
-            echo "- ${{ steps.repo_info.outputs.contributor_3 }}"
+            echo '### 📦 Private Repo Info'
+            echo ""
+            echo "- Total commits: ${{ steps.repo_info.outputs.commit_count }}"
+            echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
+            echo "- Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}"
           } >> README.md
 
       - name: Commit and push changes
