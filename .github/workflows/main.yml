@@ -34,11 +34,7 @@ jobs:
           echo "commit_count=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
           echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
           echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
-          
-          top_contributors=$(git shortlog -sn | head -3 | sed 's/^/  - /')
-          echo "top_contributors<<EOF" >> $GITHUB_OUTPUT
-          echo "$top_contributors" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "$top_contributors=$(git shortlog -sn | head -3 | sed 's/^/  - /')" >> $GITHUB_OUTPUT
 
       - name: Update README.md
         run: |
