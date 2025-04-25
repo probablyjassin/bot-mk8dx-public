@@ -34,17 +34,21 @@ jobs:
           echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
           echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
 
+          echo "user1_commits=$(git log --author="probablyjassin" --pretty=oneline | wc -l)" >> $GITHUB_OUTPUT
+          echo "user2_commits=$(git log --author="kevnkkm" --pretty=oneline | wc -l)" >> $GITHUB_OUTPUT
+
       - name: Update README.md
         run: |
           # Remove old info section if it exists
-          sed -i '/### 📦 Private Repo Info/,$d' README.md
+          sed -i '/## Repository Stats/,$d' README.md
 
           {
-            echo '### 📦 Private Repo Info'
-            echo ""
-            echo "- Total commits: ${{ steps.repo_info.outputs.commit_count }}"
+            echo '## Repository Stats'
+            echo "- ${{ steps.repo_info.outputs.commit_count }} total commits"
             echo "- Latest commit: ${{ steps.repo_info.outputs.latest_commit_msg }}"
             echo "- Commit date: ${{ steps.repo_info.outputs.latest_commit_date }}"
+            echo "- ProbablyJassin commits: ${{ steps.repo_info.outputs.user1_commits }}"
+            echo "- Kevnkkm commits: ${{ steps.repo_info.outputs.user2_commits }}"
           } >> README.md
 
       - name: Commit and push changes
