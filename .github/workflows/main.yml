@@ -48,9 +48,9 @@ jobs:
             echo "- Latest commit: \`${{ steps.repo_info.outputs.latest_commit_msg }}\` on ${{ steps.repo_info.outputs.latest_commit_date }}"
             echo "### Top contributors:"
             echo ""
-            echo "probablyjassin: ${{ steps.repo_info.outputs.user1_commits }}"
+            echo "\`probablyjassin\`: ${{ steps.repo_info.outputs.user1_commits }} commits"
             echo ""
-            echo "kevnkkm: ${{ steps.repo_info.outputs.user2_commits }}"
+            echo "\`kevnkkm\`: ${{ steps.repo_info.outputs.user2_commits }} commits"
             echo ""
           } >> README.md
 
