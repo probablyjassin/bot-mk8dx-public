@@ -5,5 +5,5 @@ text goes here
 - 645 total commits
 - Latest commit: `improve /status in case the room is unavailable` on 2025-04-24
 ### Top contributors:
-probablyjassin: 460
-kevnkkm: 10
+probablyjassin: 460 \n
+kevnkkm: 10 \n
