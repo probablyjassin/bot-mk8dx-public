@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-651 total commits
+682 total commits
 
-Latest commit: `add reasons on adding roles` on 2025-04-25
+Latest commit: `add debugging for pinging inmogi` on 2025-04-27
 #### Top contributors:
 
-`probablyjassin`: 466 commits
+`probablyjassin`: 497 commits
 
 `kevnkkm`: 10 commits
 
