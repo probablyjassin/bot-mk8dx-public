@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-702 total commits
+705 total commits
 
-Latest commit: `attempt to prevent automatic vote button timeout` on 2025-05-01
+Latest commit: `working on move command` on 2025-05-06
 #### Top contributors:
 
-`probablyjassin`: 513 commits
+`probablyjassin`: 516 commits
 
 `kevnkkm`: 10 commits
 
