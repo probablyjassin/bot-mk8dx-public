@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-757 total commits
+780 total commits
 
-Latest commit: `actually assign best server to mogi after vote` on 2025-05-07
+Latest commit: `implement no_min_players flag` on 2025-05-09
 #### Top contributors:
 
-`probablyjassin`: 532 commits
+`probablyjassin`: 551 commits
 
 `kevnkkm`: 10 commits
 
