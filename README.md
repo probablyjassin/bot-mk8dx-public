@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-790 total commits
+824 total commits
 
-Latest commit: `maybe make editing username during mogi work` on 2025-05-09
+Latest commit: `fix /leave` on 2025-05-11
 #### Top contributors:
 
-`probablyjassin`: 561 commits
+`probablyjassin`: 595 commits
 
 `kevnkkm`: 10 commits
 
