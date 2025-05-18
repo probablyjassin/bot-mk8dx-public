@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-873 total commits
+885 total commits
 
-Latest commit: `fix order of operations in with_player` on 2025-05-15
+Latest commit: `adjust /status for correct maxPlayers attribute of Room` on 2025-05-17
 #### Top contributors:
 
-`probablyjassin`: 642 commits
+`probablyjassin`: 654 commits
 
 `kevnkkm`: 10 commits
 
