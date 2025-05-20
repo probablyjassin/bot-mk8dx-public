@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-909 total commits
+912 total commits
 
-Latest commit: `fix /password for closed mogi` on 2025-05-19
+Latest commit: `add /room to safemodecog` on 2025-05-19
 #### Top contributors:
 
-`probablyjassin`: 678 commits
+`probablyjassin`: 681 commits
 
 `kevnkkm`: 10 commits
 
