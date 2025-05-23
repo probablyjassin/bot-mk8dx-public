@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-912 total commits
+915 total commits
 
-Latest commit: `add /room to safemodecog` on 2025-05-19
+Latest commit: `fix inmogi role assignment when subbing` on 2025-05-22
 #### Top contributors:
 
-`probablyjassin`: 681 commits
+`probablyjassin`: 684 commits
 
 `kevnkkm`: 10 commits
 
