@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-915 total commits
+918 total commits
 
-Latest commit: `fix inmogi role assignment when subbing` on 2025-05-22
+Latest commit: `define custom  method for mogi class` on 2025-05-27
 #### Top contributors:
 
-`probablyjassin`: 684 commits
+`probablyjassin`: 687 commits
 
 `kevnkkm`: 10 commits
 
