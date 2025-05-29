@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-918 total commits
+920 total commits
 
-Latest commit: `define custom  method for mogi class` on 2025-05-27
+Latest commit: `add module docstring to main.py` on 2025-05-28
 #### Top contributors:
 
-`probablyjassin`: 687 commits
+`probablyjassin`: 689 commits
 
 `kevnkkm`: 10 commits
 
