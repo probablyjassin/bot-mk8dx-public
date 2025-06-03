@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-920 total commits
+921 total commits
 
-Latest commit: `add module docstring to main.py` on 2025-05-28
+Latest commit: `add custom formatting to state management json file for easier access` on 2025-06-02
 #### Top contributors:
 
-`probablyjassin`: 689 commits
+`probablyjassin`: 690 commits
 
 `kevnkkm`: 10 commits
 
