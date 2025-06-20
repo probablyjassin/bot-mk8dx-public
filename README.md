@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-935 total commits
+937 total commits
 
-Latest commit: `go back to old state management` on 2025-06-19
+Latest commit: `try to fix state loading` on 2025-06-19
 #### Top contributors:
 
-`probablyjassin`: 702 commits
+`probablyjassin`: 704 commits
 
 `kevnkkm`: 10 commits
 
