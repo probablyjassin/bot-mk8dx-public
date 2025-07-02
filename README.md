@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-951 total commits
+954 total commits
 
-Latest commit: `add explanation to /password for newbies` on 2025-06-30
+Latest commit: `fix cooldown on /ping` on 2025-07-01
 #### Top contributors:
 
-`probablyjassin`: 718 commits
+`probablyjassin`: 721 commits
 
 `kevnkkm`: 10 commits
 
