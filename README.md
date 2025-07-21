@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-985 total commits
+987 total commits
 
-Latest commit: `adjust /sub tax` on 2025-07-14
+Latest commit: `revert changes` on 2025-07-20
 #### Top contributors:
 
-`probablyjassin`: 752 commits
+`probablyjassin`: 754 commits
 
 `kevnkkm`: 10 commits
 
