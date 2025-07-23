@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-987 total commits
+988 total commits
 
-Latest commit: `revert changes` on 2025-07-20
+Latest commit: `added mmr alg weights for 5v5` on 2025-07-22
 #### Top contributors:
 
-`probablyjassin`: 754 commits
+`probablyjassin`: 755 commits
 
 `kevnkkm`: 10 commits
 
