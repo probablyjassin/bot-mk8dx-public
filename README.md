@@ -57,7 +57,7 @@ Some have been wishing for this **over a full year ago** in \#suggestions, and d
 #### How it works:
 When voting for the format, instead of picking FFA, 2v2, 3v3,... pick `Mini Mogi`!
 
-Mini Mogis are always FFA, and they are **capped to 40 minutes of play time, or until you reach 6 races**! The Lounge Bot will also notify you in the mogi when the 40 minute threshold is reached.
+Mini Mogis are always FFA, and they are **capped to 40 minutes of play time, or until you reach 6 races**! The Lounge Bot will also notify you in the mogi when the 40 minute threshold is reached. Furthermore, MMR gains/losses are reduced to 60%
 
 ## RANDOM Teams!
 While voting for the format, you can now **press `Random Teams` before you pick**, to get **fully randomized teammates** if the vote ends in **2v2 or 3v3**!
