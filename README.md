@@ -23,9 +23,7 @@ Latest commit: `fix /password for mogi managers` on 2025-07-25
 - SO much more under the hood
 
 # The 4th Season of MK8DX-Lounge on Yuzu Online!
-![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
-
-image goes here
+<img width="4000" height="2812" alt="Yuzu Online Lounge Season 4 Banner" src="https://github.com/user-attachments/assets/f0ab0af9-9e22-45ad-8e8c-c10fbfc13e7f" />
 
 We're happy to present the brand new season of Lounge to you! There is many new things we prepared for you this time!
 
