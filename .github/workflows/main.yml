@@ -1,3 +1,42 @@
+name: Update README with Private Repo Info
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout public repo
+        uses: actions/checkout@v3
+
+      - name: Clone private repo
+        env:
+          PAT: ${{ secrets.PRIVATE_PAT }}
+        run: |
+          git clone https://$PAT@github.com/probablyjassin/bot-mk8dx.git private-repo
+
+      - name: Git Pull
+        run: |
+          git pull
+
+      - name: Get private repo info
+        id: repo_info
+        run: |
+          cd private-repo
+          echo "commit_count=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
+          echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+          echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
+
+          echo "user1_commits=$(git log --author="probablyjassin" --pretty=oneline | wc -l)" >> $GITHUB_OUTPUT
+          echo "user2_commits=$(git log --author="kevnkkm" --pretty=oneline | wc -l)" >> $GITHUB_OUTPUT
+
       - name: Update README.md
         run: |
           # Remove old info section if it exists
@@ -7,12 +46,12 @@
             echo '# Repository Stats'
             echo "${{ steps.repo_info.outputs.commit_count }} total commits"
             echo ""
-            echo "Latest commit: \`${{ steps.repo_info.outputs.latest_commit_msg }}\` on ${{ steps.repo_info.outputs.latest_commit_date }}"
+            echo "Latest commit: \${{ steps.repo_info.outputs.latest_commit_msg }}\ on ${{ steps.repo_info.outputs.latest_commit_date }}"
             echo "#### Top contributors:"
             echo ""
-            echo "\`probablyjassin\`: ${{ steps.repo_info.outputs.user1_commits }} commits"
+            echo "\probablyjassin\: ${{ steps.repo_info.outputs.user1_commits }} commits"
             echo ""
-            echo "\`kevnkkm\`: ${{ steps.repo_info.outputs.user2_commits }} commits"
+            echo "\kevnkkm\: ${{ steps.repo_info.outputs.user2_commits }} commits"
             echo ""
 
             echo '# What does this bot do?'
@@ -25,7 +64,7 @@
             echo '- store all this data in a mongodb database'
             echo '- SO much more under the hood'
             echo ''
-
+      
             echo '# The 4th Season of MK8DX-Lounge on Yuzu Online!'
             echo ''
             echo 'image goes here'
