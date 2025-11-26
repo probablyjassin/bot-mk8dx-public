@@ -5,12 +5,12 @@
 # Repository Stats
 1422 total commits
 
-Latest commit: \comment out /swap  \ on 2025-11-26
+Latest commit:  on 2025-11-26
 #### Top contributors:
 
-\probablyjassin\: 1099 commits
+probablyjassin: 1099 commits
 
-\kevnkkm\: 10 commits
+kevnkkm: 10 commits
 
 # What does this bot do?
 
