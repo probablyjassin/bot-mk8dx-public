@@ -31,7 +31,11 @@ jobs:
         run: |
           cd private-repo
           echo "commit_count=$(git rev-list --count HEAD)" >> $GITHUB_OUTPUT
-          echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
+          
+          latest_msg=$(git log -1 --pretty=%B | tr '\n' ' ' | sed 's/%/%%/g')
+          echo "latest_commit_msg=$latest_msg" >> $GITHUB_OUTPUT
+          
+          #echo "latest_commit_msg=$(git log -1 --pretty=%B)" >> $GITHUB_OUTPUT
           echo "latest_commit_date=$(git log -1 --date=short --pretty=format:"%ad")" >> $GITHUB_OUTPUT
 
           echo "user1_commits=$(git log --author="probablyjassin" --pretty=oneline | wc -l)" >> $GITHUB_OUTPUT
