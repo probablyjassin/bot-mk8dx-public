@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-1462 total commits
+1463 total commits
 
-Latest commit: **attempt to fix Tablestring->Add points from Img  ** on 2025-12-11
+Latest commit: **make  ephemeral  ** on 2025-12-16
 #### Top contributors:
 
-*probablyjassin*: 1128 commits
+*probablyjassin*: 1129 commits
 
 *kevnkkm*: 10 commits
 
