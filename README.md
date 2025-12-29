@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-2303 total commits
+2304 total commits
 
-Latest commit: **add extra info to /votes  ** on 2025-12-27
+Latest commit: **adjust team tags  ** on 2025-12-28
 #### Top contributors:
 
-*probablyjassin*: 1820 commits
+*probablyjassin*: 1821 commits
 
 *kevnkkm*: 10 commits
 
