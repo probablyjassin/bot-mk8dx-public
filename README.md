@@ -3,9 +3,9 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-2306 total commits
+2307 total commits
 
-Latest commit: **touch up the regex for table reader  ** on 2026-01-07
+Latest commit: **added some comments  ** on 2026-01-08
 #### Top contributors:
 
 *probablyjassin*: 1823 commits
