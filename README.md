@@ -3,9 +3,9 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-2319 total commits
+2320 total commits
 
-Latest commit: **Merge branch 'main' of https://github.com/probablyjassin/bot-mk8dx  ** on 2026-01-18
+Latest commit: **WIP: analyse player join time to clear queue of inactive players  ** on 2026-02-10
 #### Top contributors:
 
 *probablyjassin*: 1834 commits
