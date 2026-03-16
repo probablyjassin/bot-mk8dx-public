@@ -3,12 +3,12 @@
 ![MK8DX-Lounge Bot GitHub Banner](https://github.com/mk8dx-yuzu/mk8dx-bot/assets/56404895/8aaf00d2-d093-4b9a-a5bc-946754b996d2)
 
 # Repository Stats
-2320 total commits
+2321 total commits
 
-Latest commit: **WIP: analyse player join time to clear queue of inactive players  ** on 2026-02-10
+Latest commit: **add fallback for yuzu api down  ** on 2026-03-15
 #### Top contributors:
 
-*probablyjassin*: 1834 commits
+*probablyjassin*: 1835 commits
 
 *kevnkkm*: 10 commits
 
